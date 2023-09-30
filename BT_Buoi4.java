@@ -48,46 +48,40 @@ public class BT_Buoi4 {
 //			System.out.println("Nhập vào không hợp lệ");
 //			break;
 //		}
-		
-		
-		
-		
-		
-										/**Bài tập về nhà*/
-		
-		
-		//Bài tập 1:
+
+		/** Bài tập về nhà */
+
+		// Bài tập 1:
 		Scanner scc = new Scanner(System.in);
-		
+
 		System.out.println("Vui lòng nhập tên của sinh viên thứ nhất: ");
 		String tenSV1 = scc.nextLine();
 		System.out.println("Vui lòng nhập năm sinh của sinh viên thứ nhất: ");
 		int nsSV1 = Integer.parseInt(scc.nextLine());
-		
+
 		System.out.println("Vui lòng nhập tên của sinh viên thứ hai: ");
 		String tenSV2 = scc.nextLine();
 		System.out.println("Vui lòng nhập năm sinh của sinh viên thứ hai: ");
 		int nsSV2 = Integer.parseInt(scc.nextLine());
-		
+
 		System.out.println("Vui lòng nhập tên của sinh viên thứ ba: ");
 		String tenSV3 = scc.nextLine();
 		System.out.println("Vui lòng nhập năm sinh của sinh viên thứ ba: ");
 		int nsSV3 = Integer.parseInt(scc.nextLine());
-		
-		
+
 		if (nsSV1 > nsSV2 && nsSV1 > nsSV3) {
 			System.out.println(tenSV1 + " sinh năm" + nsSV1 + " là sinh viên trẻ tuổi nhất \n");
-		}else if(nsSV2 > nsSV1 && nsSV2 > nsSV3) {
+		} else if (nsSV2 > nsSV1 && nsSV2 > nsSV3) {
 			System.out.println(tenSV2 + " sinh năm" + nsSV2 + " là sinh viên trẻ tuổi nhất \n");
-		}else if(nsSV3 > nsSV1 && nsSV3 > nsSV2) {
+		} else if (nsSV3 > nsSV1 && nsSV3 > nsSV2) {
 			System.out.println(tenSV3 + " sinh năm" + nsSV3 + " là sinh viên trẻ tuổi nhất \n");
-		}else if(nsSV1 == nsSV2 && nsSV1 > nsSV3) {
+		} else if (nsSV1 == nsSV2 && nsSV1 > nsSV3) {
 			System.out.println(tenSV1 + " và" + tenSV2 + " sinh năm" + nsSV1 + " là 2 sinh viên trẻ tuổi nhất \n");
-		}else if(nsSV1 == nsSV3 && nsSV1 > nsSV2) {
+		} else if (nsSV1 == nsSV3 && nsSV1 > nsSV2) {
 			System.out.println(tenSV1 + " và" + tenSV3 + " sinh năm" + nsSV1 + " là 2 sinh viên trẻ tuổi nhất \n");
-		}else if(nsSV2 == nsSV3 && nsSV2 > nsSV1) {
+		} else if (nsSV2 == nsSV3 && nsSV2 > nsSV1) {
 			System.out.println(tenSV2 + " và" + tenSV3 + " sinh năm" + nsSV2 + " là 2 sinh viên trẻ tuổi nhất \n");
-		}else {
+		} else {
 			System.out.println(tenSV1 + ", " + tenSV2 + ", " + tenSV3 + " sinh năm " + nsSV1 + " và bằng tuổi nhau \n");
 		}
 //		
@@ -96,20 +90,23 @@ public class BT_Buoi4 {
 		int soChan = 0;
 		int soLe = 0;
 		String thongBao = "";
-		
+
 		System.out.println("Vui lòng nhập vào số nguyên thứ nhất: ");
 		int soInt1 = Integer.parseInt(scc.nextLine());
 		System.out.println("Vui lòng nhập vào số nguyên thứ hai: ");
 		int soInt2 = Integer.parseInt(scc.nextLine());
 		System.out.println("Vui lòng nhập vào số nguyên thứ ba: ");
 		int soInt3 = Integer.parseInt(scc.nextLine());
-		
-		thongBao = soInt1 % 2 == 0 ? "Có " + ++soChan + " số chẵn" + " và " + soLe + " số lẻ" : "Có " + soChan + " số chẵn" + " và " + ++soLe + " số lẻ" ;
-		
-		thongBao = soInt2 % 2 == 0 ? "Có " + ++soChan + " số chẵn" + " và " + soLe + " số lẻ" : "Có " + soChan + " số chẵn" + " và " + ++soLe + " số lẻ" ;
-		
-		thongBao = soInt3 % 2 == 0 ? "Có " + ++soChan + " số chẵn" + " và " + soLe + " số lẻ" : "Có " + soChan + " số chẵn" + " và " + ++soLe + " số lẻ" ;
-		
+
+		thongBao = soInt1 % 2 == 0 ? "Có " + ++soChan + " số chẵn" + " và " + soLe + " số lẻ"
+				: "Có " + soChan + " số chẵn" + " và " + ++soLe + " số lẻ";
+
+		thongBao = soInt2 % 2 == 0 ? "Có " + ++soChan + " số chẵn" + " và " + soLe + " số lẻ"
+				: "Có " + soChan + " số chẵn" + " và " + ++soLe + " số lẻ";
+
+		thongBao = soInt3 % 2 == 0 ? "Có " + ++soChan + " số chẵn" + " và " + soLe + " số lẻ"
+				: "Có " + soChan + " số chẵn" + " và " + ++soLe + " số lẻ";
+
 		System.out.println(thongBao + "\n");
 //		
 //		
@@ -119,21 +116,20 @@ public class BT_Buoi4 {
 		int namsinh1, namsinh2, namsinh3;
 		String ktGT = "nam";
 
-		
 		System.out.println("Vui lòng nhập tên cán bộ 1");
 		ten1 = scc.nextLine();
 		System.out.println("Vui lòng nhập giới tính cán bộ 1");
 		gioitinh1 = scc.nextLine().toLowerCase();
 		System.out.println("Vui lòng nhập năm sinh cán bộ 1");
 		namsinh1 = Integer.parseInt(scc.nextLine());
-		
+
 		System.out.println("Vui lòng nhập tên cán bộ 2");
 		ten2 = scc.nextLine();
 		System.out.println("Vui lòng nhập giới tính cán bộ 2");
 		gioitinh2 = scc.nextLine().toLowerCase();
 		System.out.println("Vui lòng nhập năm sinh cán bộ 2");
 		namsinh2 = Integer.parseInt(scc.nextLine());
-		
+
 		System.out.println("Vui lòng nhập tên cán bộ 3");
 		ten3 = scc.nextLine();
 		System.out.println("Vui lòng nhập giới tính cán bộ 3");
@@ -171,11 +167,11 @@ public class BT_Buoi4 {
 		double latSV1 = 10.77973966877115;
 		double longSV1 = 106.68223380721726;
 		String tenSv1 = "Thông1";
-		
+
 		double latSV2 = 10.81301369271333;
 		double longSV2 = 106.68409221020623;
 		String tenSv2 = "Thông2";
-		
+
 		double latSV3 = 10.798133968039869;
 		double longSV3 = 106.70698981468689;
 		String tenSv3 = "Thông3";
@@ -184,54 +180,47 @@ public class BT_Buoi4 {
 		double sv1toCyber = Math.sqrt(Math.pow((latCyber - latSV1), 2) + Math.pow((longCyber - longSV1), 2));
 		double sv2toCyber = Math.sqrt(Math.pow((latCyber - latSV2), 2) + Math.pow((longCyber - longSV2), 2));
 		double sv3toCyber = Math.sqrt(Math.pow((latCyber - latSV3), 2) + Math.pow((longCyber - longSV3), 2));
-		
+
 		if (sv1toCyber > sv2toCyber && sv1toCyber > sv3toCyber) {
 			System.out.println(tenSv1 + " là sinh viên nhà xa trường nhất \n");
-		}else if (sv2toCyber > sv1toCyber && sv2toCyber > sv3toCyber) {
+		} else if (sv2toCyber > sv1toCyber && sv2toCyber > sv3toCyber) {
 			System.out.println(tenSv2 + " là sinh viên nhà xa trường nhất \n");
-		}else {
+		} else {
 			System.out.println(tenSv3 + " là sinh viên nhà xa trường nhất \n");
 		}
-		
-		
-		
-		
-		//Bài tập thêm:
+
+		// Bài tập thêm:
 		double tongTien = 0;
-		
+
 		System.out.println("Vui lòng nhập vào tên sản phẩm: ");
 		String tenSP = scc.nextLine();
 		System.out.println("Vui lòng nhập vào số lượng mua: ");
 		int slg = Integer.parseInt(scc.nextLine());
 		System.out.println("Vui lòng nhập vào đơn giá mua (vnđ): ");
 		double donGia = scc.nextDouble();
-		
-		int ktSlg = slg / 50;
-		
-		System.out.println(ktSlg);
-		
-		switch (ktSlg) {
-		case 0:
-			tongTien = slg * donGia ;
-			break;
-		case 1:
-			tongTien = (50 * donGia) + ((slg - 50) * (donGia - (donGia/100*8)));
-			break;
 
-		default:
-			tongTien = (50 * donGia) + (50 * (donGia - (donGia/100*8))) + ((slg - 100) * (donGia - (donGia/100*12)));
-			break;
+		int ktSlg = slg / 50;
+
+		if (slg < 0 || donGia < 0) {
+			System.out.println("Số liệu nhập vào < 0");
+		} else {
+			switch (ktSlg) {
+			case 0:
+				tongTien = slg * donGia;
+				break;
+			case 1:
+				tongTien = (50 * donGia) + ((slg - 50) * (donGia - (donGia / 100 * 8)));
+				break;
+
+			default:
+				tongTien = (50 * donGia) + (50 * (donGia - (donGia / 100 * 8)))
+						+ ((slg - 100) * (donGia - (donGia / 100 * 12)));
+				break;
+			}
+//			
+			System.out.println("Tổng số tiền phải trả khi mua " + slg + " " + tenSP + " là: " + tongTien);
 		}
-//		
-		System.out.println("Tổng số tiền phải trả khi mua " + slg + " " + tenSP + " là: " + tongTien);
-		
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
 }
