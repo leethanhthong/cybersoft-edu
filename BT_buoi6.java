@@ -99,7 +99,7 @@ public class BT_buoi6 {
 		int n4 = sc.nextInt();
 
 		for (int i = 1; i <= n4; i++) {
-			tong4 += canBac(x4, i);
+			tong4 += luyThua(x4, i);
 		}
 		System.out.println(tong4);
 
@@ -127,7 +127,7 @@ public class BT_buoi6 {
 
 	}
 
-	static double canBac(double x, int n) {
+	static double luyThua(double x, int n) {
 		double result = 0;
 		result = Math.pow(x, n);
 		return result;
