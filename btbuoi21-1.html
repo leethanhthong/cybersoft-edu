@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        /* width: 100%; */
+      }
+      .contact {
+        background-color: rgb(60 164 240);
+        text-align: right;
+        margin: auto;
+        width: 100%;
+        color: white;
+        height: 30px;
+        position: absolute;
+        padding-top: 0.3%;
+      }
+      .uk-hospital {
+        color: black;
+        font-size: 2.5rem;
+        margin-left: 5%;
+        margin-bottom: 0%;
+        margin-top: 1%;
+      }
+      .uk-hospital.uk {
+        color: #2db6f4;
+      }
+      .navvbar {
+        margin-top: -2%;
+        /* color: gray; */
+        margin-right: 10%;
+      }
+      .navvbar a {
+        color: gray;
+      }
+      .banner {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+      }
+      .banner img {
+        display: block;
+        width: 100%;
+        height: 28rem;
+        object-fit: cover;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        pointer-events: none; /* Cho phép tương tác với nội dung bên dưới */
+      }
+      .text-banner {
+        position: absolute;
+        color: rgb(241, 235, 235, 0.8);
+        font-size: 30px;
+        top: 35%;
+        left: 0%;
+      }
+      h6,
+      h4,
+      p,
+      ul {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      h6 {
+        margin-top: 2%;
+      }
+      hr {
+        height: 20px;
+      }
+      h5 {
+        text-align: center;
+      }
+      .form {
+        margin-left: 50%;
+        margin-right: 10%;
+        margin-bottom: 10%;
+      }
+      .form-input {
+        margin-bottom: 7%;
+      }
+      #button-submit {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact">
+      <span>Contact Us +91 96366 200000/01 | ukh@hospital.com</span>
+    </div>
+    <br />
+
+    <!--  -->
+    <div class="uk-hospital">
+      <span class="uk-hospital uk">UK</span>
+      <span>Hospital</span>
+    </div>
+
+    <ul class="nav justify-content-end navvbar">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Service</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact US</a>
+      </li>
+    </ul>
+
+    <div class="banner">
+      <img
+        src="https://as2.ftcdn.net/v2/jpg/02/84/76/55/1000_F_284765598_uktoDOquqI0SBNQyndY8V0KIXSaM57Hq.jpg"
+        alt=""
+      />
+
+      <div class="overlay">
+        <span class="text-banner"
+          >Health Care Service <br />We Care About Your Health
+        </span>
+      </div>
+    </div>
+    <h6>We are medical center</h6>
+    <h4>We Have Medicare Plan Options for You!</h4>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quos ex
+      autem modi quisquam quam ducimus, similique voluptatem non sed, debitis
+      exercitationem aspernatur repudiandae iusto veniam, iure officiis
+      dignissimos reprehenderit?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officiis
+      necessitatibus tempore sapiente dolor repudiandae aperiam blanditiis
+      debitis, beatae repellat id accusantium! Soluta adipisci cum dignissimos.
+      Eligendi, quidem hic. Aspernatur?
+    </p>
+    <ul>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+      <li>Lorem ipsum dolor sit amet</li>
+    </ul>
+    <hr />
+    <h5>Make an Appointment</h5>
+
+    <div class="form">
+      <div class="row g-3 form-input">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+      </div>
+
+      <div class="row g-3 form-input">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Email ID"
+            aria-label="Email ID"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Mobile No"
+            aria-label="Mobile No"
+          />
+        </div>
+      </div>
+
+      <div class="row g-3 form-input">
+        <div class="col">
+          <select id="inputState" class="form-select">
+            <option selected>-- Sex --</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Mobile No"
+            aria-label="Mobile No"
+          />
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <textarea
+          class="form-control"
+          id="validationTextarea"
+          placeholder="Please enter a message at here"
+          required
+        ></textarea>
+        <div class="invalid-feedback">
+          Please enter a message in the textarea.
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" id="button-submit">
+        Submit
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
